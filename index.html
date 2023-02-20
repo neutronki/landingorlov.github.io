@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>My landing project</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">IC "Repair Design Project"</a> 
+            </div>
+            <nav>
+                <ul class="header-navigation">
+                    <li class="header-navigation__item"><a href="#" class="active">HOME</a></li>
+                    <li class="header-navigation__item"><a href="#">PROJECTS</a></li>
+                    <li class="header-navigation__item"><a href="#">MEASUREMENT</a></li>
+                    <li class="header-navigation__item"><a href="#">TEAM</a></li>
+                    <li class="header-navigation__item"><a href="#">REVIEWS</a></li>
+                    <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <a class="phone-number" href="tel:89287683239">+7 (928) 768-32-39</a>
+            <button class="button">Request a call</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-info">
+                    <h1 class="title">
+                        Turnkey Repair in the city of <span>Rostov-on-Don</span>
+                    </h1>
+                    <p>Get ready-made turnkey repairs on time
+                        with&nbsp;work&nbsp;time saving up to 45 days and 20% from
+                        cost of materials due to the organization of work</p>
+                    <button class="button">CALCULATE THE COST</button>
+                    <button class="button button-transparent"><span>SUBMIT YOUR</span> APPLICATION</button>
+                </div>    
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container flex-container">
+                <div class="flex-container_element-1">
+                    <h2>Completed <br>projects</h2>
+                    <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
+                        market we have made happy more than 1000 families</p>
+                    <!-- Тут я так понял слайдер вмещающий в себя изображение, параметры проекта слева и навигацию. 
+                        Так как в данной верстке не требуется прменение js, я просто сделал отдельно вариант мобильной версии. -->
+                    <div class="mobile-slider">
+                        <img src="images/project-2.jpg" alt="project-2">
+                        <span class="arrow-left"><img src="icons/nav-left.svg" alt="nav-left"></span>
+                        <span class="arrow-right"><img src="icons/nav-right.svg" alt="nav-right"></span>
+                    </div>
+                    <div class="project-description">
+                        <div>
+                            <h4>City:</h4>
+                            <p>Rostov-on-Don
+                                <br>LCD admiral</p>
+                        </div>
+                        <div>
+                            <h4>apartment area:</h4>
+                            <p>81 m2</p>
+                        </div>
+                        <div>
+                            <h4>Repair time:</h4>
+                            <p>3.5 months</p>
+                        </div>
+                        <div>
+                            <h4>Repair Cost:</h4>
+                            <p>Upon request</p>
+                        </div>
+                    </div>
+                    <div class="project-slider-navigation">
+                    <!-- Обычно вставляю svg спрайтами, не знаю какие у вас требования, поэтому в данной работе выбрал вариант побыстрее. -->
+                        <img src="icons/arrow-left.svg" class="arrow-left" alt="arrow-left">
+                        <span class="dot-navigation active"></span>
+                        <span class="dot-navigation"></span>
+                        <span class="dot-navigation"></span>
+                        <img src="icons/arrow-right.svg" class="arrow-right" alt="arrow-right">
+                    </div>
+                </div>
+                <div class="flex-container_element-2">
+                    <ul class="gallery-navigation-list">
+                        <li>
+                            <a class="list-item active" href="#">Rostov-on-Don, Admiral</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">Sochi Thieves</a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">Rostov-on-Don Patriotic</a>
+                        </li>
+                    </ul>
+                    <div class="project-slider-items">
+                        <img src="images/project-1.jpg" alt="project-1">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="online-control">
+            <div class="container">
+                <h3 class="subtitle">online control</h3>
+                <div class="title-spacer">
+                    <span></span>
+                    <img src="icons/spacer-icon-1.svg" alt="spacer-icon">
+                    <span></span>
+                </div>
+                <div class="video-container">
+                    <a href="http://" target="_blank" class="play-button"><i class="fa fa-play"></i></a>
+                    <img src="images/video-bg.jpg" alt="video-bg">
+                </div>
+                <div class="section-spacer"></div>
+                <p class="subtext">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+                    Leave a request below and you will receive a link to the broadcast.</p>
+                <!-- Не знаю есть ли требования по структуре форм, сам в своих проетах обычно использую такую структуру, наиболее удобный вариант для оформления. -->
+                <div class="form-container">
+                    <form class="form online-control-form" action="">
+                        <div class="form-group name flex-item">
+                            <span>Name</span>
+                            <input type="text" class="form-control" placeholder="What is your name:" id="name" name="name" required>
+                        </div>
+                        <div class="form-group flex-item">
+                            <span>Phone</span>
+                            <input type="text" class="form-control" placeholder="Your phone number:" id="telephone" name="telephone" required>
+                        </div>
+                        <div class="flex-item"><button type="submit" class="button">Submit</button></div>
+                        <div class="form-checkbox flex-item">
+                            <label class="label">
+                              <input type="checkbox" class="checkbox" checked="checked">
+                              <span class="fake"></span>
+                              <span class="text">I agree to the processing of personal data.</span>
+                            </label>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="types-of-repair">
+            <div class="container">
+                <h3 class="subtitle">TYPES OF REPAIR</h3>
+                <div class="title-spacer">
+                    <span></span>
+                    <img src="icons/spacer-icon-2.svg" alt="spacer-icon">
+                    <span></span>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-container_element-1 type-item">
+                        <img src="images/type-1.jpg" alt="">
+                        <div class="type-description">
+                            <h4>Redecorating</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <button class="button">from 900 rub / m2</button>
+                        </div>
+                    </div>
+                    <div class="flex-container_element-2 type-item">
+                        <img src="images/type-2.jpg" alt="">
+                        <div class="type-description">
+                            <h4>Overhaul</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <button class="button">from 1800 rub / m2</button>
+                        </div>
+                    </div>
+                    <div class="flex-container_element-3 type-item">
+                        <img src="images/type-3.jpg" alt="">
+                        <div class="type-description">
+                            <h4>Designer Repair</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <button class="button">from 4000 rub / m2</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="request-form">
+            <div class="container flex-container">
+                <div class="flex-container_element-1">
+                    <p><span>01</span> Our specialist will arrive for measurements per day<br> contact, or appoint a date convenient for you</p>
+                    <p><span>02</span> Free metering</p>
+                    <p><span>03</span> Free consultation</p>
+                    <p><span>04</span> Get a cost estimate and<br> the timing of your future repairs</p>
+                </div>
+                <div class="flex-container_element-2">
+                    <div class="form-container">
+                        <p>Leave a request for free <br>departure of the measurer</p>
+                        <form action="">
+                            <div class="form-group">
+                                <span>Name</span>
+                                <input type="text" class="form-control" placeholder="What is your name:" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <span>Phone</span>
+                                <input type="text" class="form-control" placeholder="Your phone number:" id="telephone" name="telephone" required>
+                            </div>
+                            <div class="form-group">
+                                <span>email</span>
+                                <input type="email" class="form-control" placeholder="Your email:" id="email" name="email" required>
+                            </div>
+                            <div class="form-checkbox">
+                                <label class="label">
+                                  <input type="checkbox" class="checkbox" checked="checked">
+                                  <span class="fake"></span>
+                                  <span class="text">I agree to the processing of personal data.</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="button">Call the measurer</button>
+                        </form>
+                    </div>
+                    <div class="save-cost">
+                        <span><img src="icons/piggy-bank.svg" alt="piggy-bank"> </span>
+                        <p>Help save 10 - 20% of the <br>cost of materials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="hero-overlay"></div>
+            <div class="container flex-container">
+                <div class="gallery-navigation-container">
+                    <h2>We realize your <br>wildest fantasies</h2>
+
+                    <!-- Здесь таже история со слайдером, что и в предыдущем. --> 
+                    <div class="mobile-slider">
+                        <img src="images/mob-gallery.jpg" alt="mob-gallery">
+                        <span class="arrow-left"><img src="icons/nav-left.svg" alt="nav-left"></span>
+                        <span class="arrow-right"><img src="icons/nav-right.svg" alt="nav-right"></span>
+                    </div>
+
+                    <ul class="gallery-navigation-list">
+                        <li>
+                            <a class="list-item active" href="#">American classic</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Empire</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Classical</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Loft</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Minimalism</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Provence</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Romanticism</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Scandinavian style</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Mediterranean style</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">High tech</a>
+                        </li>
+                        <li>
+                            <a class="list-item" href="#">Eclecticism</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery-flex">
+                    <div class="gallery-left">
+                        <img class="gallery-img" src="images/image-1.jpg" alt="Image">
+                        <img class="gallery-img" src="images/image-2.jpg" alt="Image">
+                    </div>
+                    <div class="gallery-right">
+                        <img class="gallery-img" src="images/image-3.jpg" alt="Image">
+                        <img class="gallery-img" src="images/image-4.jpg" alt="Image">
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <h3 class="subtitle">our clients</h3>
+                <div class="title-spacer">
+                    <span></span>
+                    <img src="icons/spacer-icon-3.svg" alt="spacer-icon">
+                    <span></span>
+                </div>
+                <p class="subtext">80% of our customers recommend us to their <br>friends and family.</p>
+                <div class="flex-container">
+                    <div class="flex-container_element-1 client-item">
+                        <div class="client-name">
+                            <img src="images/client-1.jpg" alt="client-1">
+                            <span>Fedosova Maria <br>Konstantinovna</span>
+                        </div>
+                        <p>
+                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. 
+                            <br>The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="parameters">
+                            <span class="size"><img src="icons/size-icon.svg" alt="size"> 40 м2</span>
+                            <span class="deadlines"><img src="icons/term-icon.svg" alt="deadline"> 48 DAYS</span>
+                        </div>
+                    </div>
+                    <div class="flex-container_element-2 client-item">
+                        <div class="client-name">
+                            <img src="images/client-2.jpg" alt="client-1">
+                            <span>Afanasyev Sergey <br>Alexandrovich</span>
+                        </div>
+                        <p>
+                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="parameters">
+                            <span class="size"><img src="icons/size-icon.svg" alt="size"> 90 м2</span>
+                            <span class="deadlines"><img src="icons/term-icon.svg" alt="deadline"> 128 DAYS</span>
+                        </div>
+                    </div>
+                    <div class="flex-container_element-3 client-item">
+                        <div class="client-name">
+                            <img src="images/client-3.jpg" alt="client-1">
+                            <span>Kiriev Egor <br>Leonidovich</span>
+                        </div>
+                        <p>
+                            I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="parameters">
+                            <span class="size"><img src="icons/size-icon.svg" alt="size"> 56 м2</span>
+                            <span class="deadlines"><img src="icons/term-icon.svg" alt="deadline"> 86 DAYS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="form-container">
+                    <h3 class="subtitle">have any questions?</h3>
+                    <form class="form" action="">
+                        <div class="form-group-container">
+                        <div class="form-group name">
+                            <span>Name</span>
+                            <input type="text" class="form-control" placeholder="What is your name:" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <span>Phone</span>
+                            <input type="text" class="form-control" placeholder="Your phone number:" id="telephone" name="telephone" required>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <span>Question</span>
+                            <input type="text" class="form-control" placeholder="I want to know:" id="question" name="question" required>
+                        </div>
+                        <div class="form-checkbox">
+                            <label class="label">
+                              <input type="checkbox" class="checkbox" checked="checked">
+                              <span class="fake"></span>
+                              <span class="text">I agree to the processing of personal data.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="button">Submit</button>
+                        
+                    </form>
+                </div>
+                <div class="flex-reverse">
+                <div>
+                    <h3 class="subtitle address">Rostov-on-Don, Nansen St., 239 Shopping Center
+                    <br>Decorum Tel +7 (928) 768 32 29</h3>
+                    <div class="social">
+                        <a href="http://" target="_blank"><img src="icons/email-icon.svg" alt="email"></a>
+                        <a href="http://" target="_blank"><img src="icons/inst-icon.svg" alt="instagram"></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- В описании к заданию не указано каким образом добавлять карту. Для новичков наверное просто изображением. 
+                        Но если вдруг нет, то ниже комментарий с фреймом из редактора карт гугла. -->
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.0117667394293!2d39.72144287745786!3d47.245196875042545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1674150175191!5m2!1sru!2sru" width="100%" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+                    <img src="images/map.jpg" alt="map">
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="logo">
+               <a href="">IC "Repair Design Project"</a> 
+            </div>
+            <nav>
+                <ul class="footer-navigation">
+                    <li class="footer-navigation__item"><a href="#">HOME</a></li>
+                    <li class="footer-navigation__item"><a href="#">PROJECTS</a></li>
+                    <li class="footer-navigation__item"><a href="#">MEASUREMENT</a></li>
+                    <li class="footer-navigation__item"><a href="#">TEAM</a></li>
+                    <li class="footer-navigation__item"><a href="#">REVIEWS</a></li>
+                    <li class="footer-navigation__item"><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <a class="phone-number" href="tel:89287683239">+7 (928) 768-32-39</a>
+            <button class="button">Request a call</button>
+        </div>
+    </footer>
+</body>
+</html>
