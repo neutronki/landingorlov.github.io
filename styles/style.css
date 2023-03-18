@@ -173,6 +173,12 @@ h1.title span {
     margin: 0 0 42px;
     font-size: 14px;
 }
+.projects p.no-active {
+    display: none;
+}
+.projects p.active {
+    display: block;
+}
 .projects .flex-container_element-1 {
     display: flex;
     flex-direction: column;
@@ -231,11 +237,14 @@ h1.title span {
 .project-slider-navigation img {
     cursor: pointer;
 }
-.project-slider-navigation .arrow-left {
+.project-slider-navigation .left {
     margin-right: 20px;
 }
-.project-slider-navigation .arrow-right {
+.project-slider-navigation .right {
     margin-left: 20px;
+}
+.dots {
+    display: flex;
 }
 .dot-navigation {
     width: 10px;
@@ -268,6 +277,7 @@ h1.title span {
     text-decoration: none;
     transition: color .2s linear;
     color: #595959;
+    cursor: pointer;
 }
 .list-item:hover {
     color: #E3B873;
@@ -285,6 +295,12 @@ h1.title span {
 .projects .gallery-navigation-list {
     display: flex;
     margin: 0 0 45px;
+}
+.img-slider {
+    display: none;
+}
+.img-slider.active {
+    display: block;
 }
 
 /***** ONLINE CONTROL *****/
