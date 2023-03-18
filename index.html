@@ -47,7 +47,7 @@
             </div>
         </section>
         <section class="projects">
-            <div class="container flex-container">
+            <div class="container flex-container slider-container">
                 <div class="flex-container_element-1">
                     <h2>Completed <br>projects</h2>
                     <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
@@ -55,23 +55,19 @@
                     <!-- Тут я так понял слайдер вмещающий в себя изображение, параметры проекта слева и навигацию. 
                         Так как в данной верстке не требуется прменение js, я просто сделал отдельно вариант мобильной версии. -->
                     <div class="mobile-slider">
-                        <img src="images/project-2.jpg" alt="project-2">
+                        <img src="images/project-1.jpg" alt="project-1">
                         <span class="arrow-left"><img src="icons/nav-left.svg" alt="nav-left"></span>
                         <span class="arrow-right"><img src="icons/nav-right.svg" alt="nav-right"></span>
                     </div>
                     <div class="project-description">
-                        <div>
+                        <div class="city-data">
                             <h4>City:</h4>
-                            <p>Rostov-on-Don
-                                <br>LCD admiral</p>
                         </div>
-                        <div>
+                        <div class="apartment-data">
                             <h4>apartment area:</h4>
-                            <p>81 m2</p>
                         </div>
-                        <div>
+                        <div class="time-data">
                             <h4>Repair time:</h4>
-                            <p>3.5 months</p>
                         </div>
                         <div>
                             <h4>Repair Cost:</h4>
@@ -80,27 +76,27 @@
                     </div>
                     <div class="project-slider-navigation">
                     <!-- Обычно вставляю svg спрайтами, не знаю какие у вас требования, поэтому в данной работе выбрал вариант побыстрее. -->
-                        <img src="icons/arrow-left.svg" class="arrow-left" alt="arrow-left">
-                        <span class="dot-navigation active"></span>
-                        <span class="dot-navigation"></span>
-                        <span class="dot-navigation"></span>
-                        <img src="icons/arrow-right.svg" class="arrow-right" alt="arrow-right">
+                        <img src="icons/arrow-left.svg" class="slider-arrow left" alt="previous">
+                        <div class="dots">
+                        
+                        </div>
+                        <img src="icons/arrow-right.svg" class="slider-arrow right" alt="next">
                     </div>
                 </div>
-                <div class="flex-container_element-2">
+                <div class="flex-container_element-2 slider-main">
                     <ul class="gallery-navigation-list">
                         <li>
-                            <a class="list-item active" href="#">Rostov-on-Don, Admiral</a>
+                            <div class="list-item active" data-index="0">Rostov-on-Don, Admiral</div>
                         </li>
                         <li>
-                            <a href="#" class="list-item">Sochi Thieves</a>
+                            <div class="list-item" data-index="1">Sochi Thieves</div>
                         </li>
                         <li>
-                            <a href="#" class="list-item">Rostov-on-Don Patriotic</a>
+                            <div class="list-item" data-index="2">Rostov-on-Don Patriotic</div>
                         </li>
                     </ul>
                     <div class="project-slider-items">
-                        <img src="images/project-1.jpg" alt="project-1">
+                        
                     </div>
                 </div>
             </div>
@@ -430,5 +426,7 @@
             <button class="button">Request a call</button>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
